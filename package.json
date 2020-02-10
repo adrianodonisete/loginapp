@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app",
+    "dev": "nodemon app",
+    "people": "node utils/gen_people",
+    "product": "node utils/gen_products"
+  },
+  "author": "Adriano Machado",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.0.1",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.1"
+  },
+  "description": ""
+}
