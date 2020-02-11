@@ -2,8 +2,12 @@ var mongoose = require("mongoose");
 var faker = require("faker");
 var PersonModel = require("../models/PersonModel");
 
-mongoose.connect('mongodb://localhost:27017/auth_test',
-    { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost:27017/auth_test',
+//     { useNewUrlParser: true });    
+
+const options = require('../src/opt/options');
+mongoose.connect(options.HOST_FULL,
+    { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function add(n) {
     try {

@@ -1,4 +1,3 @@
-
 const express = require("express");
 const helmet = require('helmet');
 const path = require('path');
@@ -23,7 +22,8 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public/loginapp')));
 
-mongoose.connect('mongodb://localhost:27017/auth_test',
+const options = require('./src/opt/options');
+mongoose.connect(options.HOST_FULL,
     { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use('/api', api);
@@ -35,6 +35,6 @@ app.use(function(req, res, next) {
 });
 
 let _port = process.env.PORT || 3000;
-
+console.log(_port+' teste');
 app.listen(_port);
 

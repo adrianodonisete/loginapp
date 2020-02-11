@@ -1,0 +1,7 @@
+{    
+    "HOST_FULL": "mongodb+srv://developer:@dm87782930@clusternodejs-b0hqw.mongodb.net/auth_test?retryWrites=true&w=majority",
+    "HOST": "clusternodejs-b0hqw.mongodb.net/auth_test?retryWrites=true&w=majority",
+    "HOST_old": "mongodb://localhost:27017/auth_test",
+    "user": "developer",
+    "password": "@dm87782930"
+}
