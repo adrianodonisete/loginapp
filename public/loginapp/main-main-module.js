@@ -105,7 +105,8 @@ __webpack_require__.r(__webpack_exports__);
 var MainService = /** @class */ (function () {
     function MainService(http) {
         this.http = http;
-        this.url = 'http://localhost:3000/api';
+        // readonly url = 'http://localhost:3000/api';
+        this.url = 'https://ng-login-app.herokuapp.com/api';
     }
     MainService.prototype.getPeople = function () {
         return this.http.get(this.url + "/people")

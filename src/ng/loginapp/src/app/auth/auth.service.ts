@@ -9,7 +9,8 @@ import { tap, map, catchError } from 'rxjs/operators';
 })
 export class AuthService {
 
-  readonly url = 'http://localhost:3000/auth';
+  // readonly url = 'http://localhost:3000/auth';
+  readonly url = 'https://ng-login-app.herokuapp.com/api';
 
   private subjUser$: BehaviorSubject<User> = new BehaviorSubject(null);
   private subjLoggedIn$: BehaviorSubject<boolean> = new BehaviorSubject(false);

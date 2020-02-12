@@ -11,7 +11,8 @@ import { catchError, tap } from 'rxjs/operators';
 })
 export class MainService {
 
-  readonly url = 'http://localhost:3000/api';
+  // readonly url = 'http://localhost:3000/api';
+  readonly url = 'https://ng-login-app.herokuapp.com/api';
 
   constructor(private http: HttpClient) { }
 
