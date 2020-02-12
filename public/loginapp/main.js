@@ -434,7 +434,7 @@ var AuthService = /** @class */ (function () {
     function AuthService(http) {
         this.http = http;
         // readonly url = 'http://localhost:3000/auth';
-        this.url = 'https://ng-login-app.herokuapp.com/api';
+        this.url = 'https://ng-login-app.herokuapp.com/auth';
         this.subjUser$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](null);
         this.subjLoggedIn$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](false);
     }
